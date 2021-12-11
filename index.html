@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Crystal Collector Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid bg-secondary" style="box-shadow:0 2px 10px 6px gray">
+                    <h1 class="display-3 text-center font-italic text-light">Crystal Collector</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 mb-4">
+            <div class="col-12">
+                <div class="panel panel-default border border-secondary rounded" style="box-shadow:0 2px 10px 6px gray">
+                    <div class="panel-heading text-center text-light bg-secondary p-2">Instructions</div>
+                    <div class="panel-body text-center p-3">You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random
+                        number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="panel panel-default border border-primary mt-2 rounded" style="box-shadow:0 2px 10px 6px gray">
+                    <div class="panel-heading text-center text-light bg-primary p-2">Target Score</div>
+                    <div class="panel-body text-center p-5" style='font-size: 25px;' id="targetScore">0</div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="panel panel-default border border-secondary mt-2 rounded" style="box-shadow:0 2px 10px 6px gray">
+                    <div class="panel-heading text-center text-light bg-secondary p-2">Your Score</div>
+                    <div class="panel-body text-center p-5" style="font-size: 25px;" id="yourScore">0</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="panel panel-default border border-primary mt-2 rounded" style="box-shadow:0 2px 10px 6px gray">
+                    <div class="panel-heading text-center text-light bg-primary p-2">Crystal Selection</div>
+                    <div class="panel-body p-5 text-center">
+                        <img src="img/blue.png" alt="" id="blue">
+                        <img src="img/green.png" alt="" id="green">
+                        <img src="img/red.png" alt="" id="red">
+                        <img src="img/yellow.png" alt="" id="yellow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <div class="panel panel-default border border-primary mt-2 rounded" style="box-shadow:0 2px 10px 6px gray">
+                    <div class="panel-heading text-center text-light bg-success p-2">Win Count</div>
+                    <div class="panel-body text-center p-5" style="font-size: 25px;" id="winCount">0</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="panel panel-default border border-primary mt-2 rounded" style="box-shadow:0 2px 10px 6px gray">
+                    <div class="panel-heading text-center text-light bg-danger p-2">Lose Count</div>
+                    <div class="panel-body text-center p-5" style="font-size: 25px;" id="loseCount">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
